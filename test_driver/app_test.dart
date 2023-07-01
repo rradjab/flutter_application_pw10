@@ -51,7 +51,7 @@ void main() {
             });
   });
 
-  group('Rigister form tests', () {
+  group('Register form tests', () {
     FlutterDriver? driver;
 
     setUpAll(() async {

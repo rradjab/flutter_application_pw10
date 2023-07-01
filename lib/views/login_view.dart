@@ -52,16 +52,17 @@ class _LoginViewState extends State<LoginView> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      _formType == FormType.login
+                      _formType == FormType.register
                           ? 'Уже есть аккаунт?'
                           : 'Еще нет аккаунта? ',
                     ),
                     TextButton(
+                      key: const ValueKey('switchButton'),
                       onPressed: _switchForm,
                       child: RichText(
                         text: TextSpan(children: [
                           TextSpan(
-                            text: _formType == FormType.login
+                            text: _formType == FormType.register
                                 ? 'Войти'
                                 : 'Регистрация',
                           )
